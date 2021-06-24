@@ -1,5 +1,5 @@
 function printVowels(string) {
-       console.log("Vowels: " + string.match(/[aeiou]/gi));
+       return (vowels = string.toLowerCase().match(/[aeiou]/g));
 }
 
 printVowels("Umuzi");

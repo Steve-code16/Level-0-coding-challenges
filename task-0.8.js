@@ -3,7 +3,7 @@ function convertNumToTime(num) {
     let minutes = num % 60;
 
     if (hours <= 1 && minutes <= 1) {
-        console.log(hours + " hour, " + minutes + " minute.");
+        console.log(hours + " hour, " + minutes + " minutes.");
     } else if (hours > 1 && minutes <= 1) {
         console.log(hours + " hours, " + minutes + " minute.");
     } else if (hours <= 1 && minutes > 1) {
