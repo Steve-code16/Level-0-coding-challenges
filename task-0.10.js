@@ -1,10 +1,21 @@
-function commonLetters(string1, string2){
-  let common = [];
-
-  for(let i = 0; i < string2.length; i++){
-     if(string1.includes(string2[i]))
-       common.push(string2[i]);
-  }
-  return "Common letters: " + common;
-}
+function commonLetters(string1, string2) {
+      let common = '';  
+      let comString1 = ' ';
+      let comString2 = ' ';
+  
+      if (string1.length > string2.length) {
+          comString1 = string1;
+          comString2 = string2;
+      } else {
+          comString1 = string2;
+          comString2 = string1;
+      }
+  
+      for(let i = 0; i < string1.length ; i++) {
+          if (comString1.indexOf(comString2[i]) !== -1) {
+            common += comString2[i];
+          }
+        }
+        return "Common letters:" + [...new Set(common)];
+      }
 console.log(commonLetters("houses", "computers"));
