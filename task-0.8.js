@@ -14,9 +14,8 @@ function convertNumToTime(num) {
         console.log(hours + " hours, " + minutes + " minute.");
     } else {
         console.log(hours + " hours, " + minutes + " minutes.");
-    }
-    
-}
+    }  
+};
 
 convertNumToTime(90);
 convertNumToTime(71);
