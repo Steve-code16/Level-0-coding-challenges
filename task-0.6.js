@@ -8,4 +8,4 @@ function maxNum(num1, num2, num3) {
     }
 };
 
-maxNum(1,2,3);
+console.log(maxNum(1,2,3));
